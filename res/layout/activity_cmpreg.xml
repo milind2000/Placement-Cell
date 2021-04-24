@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/baby_back">  
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Register your Company"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/scrollview"
+        >     
+
+<TableLayout 
+    android:layout_width = "match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TableRow 
+        android:id="@+id/first" 
+        android:layout_marginTop="60sp"
+        >
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Name :   "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:hint="Enter Name"
+            android:id = "@+id/cmpname"/>
+    </TableRow>
+        <TableRow 
+        android:id="@+id/second"
+        >
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="No. of positions   "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            
+            android:id = "@+id/position"/>
+    </TableRow>
+    <TableRow 
+        android:id="@+id/eight"
+        >
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Positions"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText 
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id = "@+id/pos"/>
+    </TableRow>
+        <TableRow 
+        android:id="@+id/seventh"
+        >
+        <Button
+           android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="Register"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:background="#90EE90"
+            android:id="@+id/cmpregister"
+             />
+        </TableRow>
+</TableLayout>   
+    </ScrollView>
+</LinearLayout>

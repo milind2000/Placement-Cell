@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background">  
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Register for Company"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/scrollview"
+        >     
+
+<TableLayout 
+    android:layout_width = "match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TableRow 
+        android:id="@+id/first"
+ 
+        android:layout_marginTop="60sp"
+        >
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Roll No :   "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFF00"
+            android:hint="Enter Roll Number"
+            android:id = "@+id/roll"/>
+    </TableRow>
+        <TableRow 
+        android:id="@+id/second"
+        >
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:   "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFF00"
+            android:hint="Enter your name"
+            android:id = "@+id/name"/>
+    </TableRow>
+    <TableRow 
+        android:id="@+id/eight"
+        >
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <EditText 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFF00"
+            android:hint="Enter name here"
+            android:id = "@+id/cmp"/>
+    </TableRow>
+            <TableRow 
+        android:id="@+id/third"
+        >
+                 <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender:   "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+<RadioGroup 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/radiogroup"
+    >
+    <RadioButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:id="@+id/male"
+        android:text = "Male"
+        />
+    <RadioButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="#000000"
+        android:id="@+id/female"
+        android:text = "Female"
+        />
+</RadioGroup>
+    </TableRow>
+    
+            <TableRow 
+        android:id="@+id/fourth"
+        >
+<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="DOB:   "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+<DatePicker
+    android:id="@+id/date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleX="0.6"
+    android:scaleY="0.6"
+    android:layout_marginLeft="-250dp"
+    android:layout_marginRight="-50dp"
+    />
+    </TableRow>
+            <TableRow 
+        android:id="@+id/fifth"
+        >
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="City:   "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <Spinner 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:textStyle="bold"
+            />
+    </TableRow>
+              <TableRow 
+        android:id="@+id/sixth"
+        >
+
+         <TextView
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="Section   "
+             android:textColor="#000000"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+        <CheckBox 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/a"
+            android:text="A"
+           
+            />
+         <CheckBox 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/b"
+            android:text="B"
+             android:layout_marginLeft="-100sp"
+            />
+    </TableRow>
+    <TableRow 
+        android:id="@+id/seventh"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:background="#000000"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:id="@+id/register"
+             />
+                <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:background="#000000"
+            android:text="Clear"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:id="@+id/clear"
+             />
+    </TableRow>
+</TableLayout>   
+    </ScrollView>
+</LinearLayout>
